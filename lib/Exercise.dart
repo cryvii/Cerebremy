@@ -38,6 +38,7 @@ class _ExercisePageState extends State<ExercisePage> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Recommended Exercises'),
+        backgroundColor: Color.fromARGB(229, 19, 222, 39),
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
