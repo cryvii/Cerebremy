@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:testest/cooking.dart';
 
-import 'views/home.dart';
+//import 'views/home.dart';
+import 'views/homepage.dart';
 
 /// KEEPING IT BUSYYYYYYYYYYYY
 class Page1 extends StatelessWidget {
@@ -80,7 +81,9 @@ class Page1 extends StatelessWidget {
                     width: double.infinity,
                     height: 100,
                     child: ElevatedButton(
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.push(context,MaterialPageRoute(builder: (context)=> HomePage()));
+                      },
                       child: Stack(
                         children: [
                           Positioned(
