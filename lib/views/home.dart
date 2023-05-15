@@ -30,12 +30,17 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Color(0xfff6e4d6),
+          iconTheme: IconThemeData(
+            color: Colors.black, // Set your desired color here
+          ),
           title: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+            mainAxisAlignment: MainAxisAlignment.start,
             children: [
-              Icon(Icons.restaurant_menu),
+              Icon(Icons.restaurant_menu, color: Colors.black),
               SizedBox(width: 10),
-              Text('Food Recipes')
+              Text('Recipes', style:
+              TextStyle(color: Colors.black))
             ],
           ),
         ),

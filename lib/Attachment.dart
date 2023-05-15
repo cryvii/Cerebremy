@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:testest/Affirmations.dart';
 import 'package:testest/cooking.dart';
+import 'Jounaling.dart';
 
 /// KEEPING IT BUSYYYYYYYYYYYY
 class Attachment extends StatelessWidget {
@@ -9,7 +11,9 @@ class Attachment extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text('Attachment Theory'),
-        backgroundColor: Color.fromARGB(255, 220, 43, 152),
+        backgroundColor: Color(0xfff47e6e)
+        //Colors.pink[500]
+        //Color.fromARGB(255, 220, 43, 152),
       ),
       body: Align(
         alignment: Alignment.topLeft,
@@ -28,7 +32,7 @@ class Attachment extends StatelessWidget {
                     height: 150,
                     child: ElevatedButton(
                         onPressed: (){
-                          Navigator.push(context,MaterialPageRoute(builder: (context)=> CookingPage()));
+                          Navigator.push(context,MaterialPageRoute(builder: (context)=> JournalScreen()));
                         },
                       child: Stack(
                         children: [
@@ -37,7 +41,7 @@ class Attachment extends StatelessWidget {
                             child: Padding(
                               padding: const EdgeInsets.only(left: 8.0, top: 20),
                               child: Text(
-                                'Secure attachment',
+                                'Secure',
                                 style: GoogleFonts.bitter(
                                     fontSize: 22.0,
                                     color: Colors.black
@@ -48,16 +52,17 @@ class Attachment extends StatelessWidget {
                           Positioned(
                             right: 0.0,
                             child: Image.asset(
-                              'assets/secure.png',
-                              width: 135.0,
-                              height: 100.0,
+                              'assets/secure.jpg',
+                              width: 170.0,
+                              height: 165.0,
                             ),
                           ),
                         ],
                       ),
                         style: ElevatedButton.styleFrom(
                           elevation: 4,
-                          primary: Color(0xFFF8D6CB),
+                          primary: Color(0xffffffff),
+                          //Color(0xFFF8D6CB),
                           onSurface: Colors.grey,
                           shadowColor: Colors.grey.withOpacity(0.1),
                           shape: RoundedRectangleBorder(
@@ -78,7 +83,9 @@ class Attachment extends StatelessWidget {
                     width: double.infinity,
                     height: 150,
                     child: ElevatedButton(
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.push(context,MaterialPageRoute(builder: (context)=> MentalHealthPage()));
+                      },
                       child: Stack(
                         children: [
                           Positioned(
@@ -97,16 +104,17 @@ class Attachment extends StatelessWidget {
                           Positioned(
                             right: 0.0,
                             child: Image.asset(
-                              'assets/anxious.png',
-                              width: 120.0,
-                              height: 110.0,
+                              'assets/Anxious.jpg',
+                              width: 160.0,
+                              height: 155.0,
                             ),
                           ),
                         ],
                       ),
                       style: ElevatedButton.styleFrom(
                         elevation: 4,
-                        primary: Color(0xFFB7E2C7),
+                        primary:Color(0xffffffff),
+                        //Color(0xFFB7E2C7),
                         onSurface: Colors.grey,
                         shadowColor: Colors.grey.withOpacity(0.1),
                         shape: RoundedRectangleBorder(
@@ -135,7 +143,7 @@ class Attachment extends StatelessWidget {
                             child: Padding(
                               padding: const EdgeInsets.only(left: 8.0, top: 20),
                               child: Text(
-                                'Fearful Avoidant',
+                                'Fearful',
                                 style: GoogleFonts.bitter(
                                     fontSize: 22.0,
                                     color: Colors.black
@@ -146,16 +154,17 @@ class Attachment extends StatelessWidget {
                           Positioned(
                             right: 0.0,
                             child: Image.asset(
-                              'assets/fearful_avoidant.png',
-                              width: 130.0,
-                              height: 95.0,
+                              'assets/Fearful.jpg',
+                              width: 160.0,
+                              height: 165.0,
                             ),
                           ),
                         ],
                       ),
                       style: ElevatedButton.styleFrom(
                         elevation: 4,
-                        primary: Color(0xffffebba),
+                        primary: Color(0xffffffff),
+                        //Color(0xffffebba),
                         onSurface: Colors.grey,
                         shadowColor: Colors.grey.withOpacity(0.1),
                         shape: RoundedRectangleBorder(
@@ -195,16 +204,17 @@ class Attachment extends StatelessWidget {
                           Positioned(
                             right: 0.0,
                             child: Image.asset(
-                              'assets/avoid.png',
-                              width: 135.0,
-                              height: 110.0,
+                              'assets/avoidant.jpg',
+                              width: 160.0,
+                              height: 165.0,
                             ),
                           ),
                         ],
                       ),
                       style: ElevatedButton.styleFrom(
                         elevation: 4,
-                        primary: Color(0xFFB8B8E8),
+                        primary: Color(0xffffffff),
+                        //Color(0xFFB8B8E8),
                         onSurface: Colors.grey,
                         shadowColor: Colors.grey.withOpacity(0.1),
                         shape: RoundedRectangleBorder(

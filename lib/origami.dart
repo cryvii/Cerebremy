@@ -76,7 +76,7 @@ class BookRecommendationPage extends StatefulWidget {
 
 class _BookRecommendationPageState extends State<BookRecommendationPage> {
   final String _apiUrl = "https://www.googleapis.com/books/v1/volumes?q=recommended%20books";
-  int _startIndex = 0;
+  int _startIndex = 1;
   List<dynamic> _books = [];
 
   Future<void> _fetchBooks(int startIndex) async {
@@ -100,8 +100,23 @@ class _BookRecommendationPageState extends State<BookRecommendationPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Book Recommendations"),
-        backgroundColor: Color.fromARGB(255, 229, 170, 20),
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Icon(Icons.menu_book, color: Colors.black),
+            SizedBox(width: 10),
+            Text('Books', style:
+            TextStyle(color: Colors.black))
+          ],
+        ),
+        // Text("Books",
+        // style:TextStyle(
+        // color: Colors.black)),
+        backgroundColor: Color(0xfff9ded7),
+        iconTheme: IconThemeData(
+          color: Colors.black, // Set your desired color here
+        ),
+        //Color.fromARGB(255, 229, 170, 20),
       ),
       body: Container(
         child: Column(
@@ -132,7 +147,12 @@ class _BookRecommendationPageState extends State<BookRecommendationPage> {
               onPressed: () {
                 _fetchBooks(_startIndex);
               },
-              child: Text("Load More"),
+              child: Text("Load More",
+              style: TextStyle(
+                color: Colors.black
+              )),
+              style: ElevatedButton.styleFrom(
+                primary: Color(0xfff9ded7),)
             ),
           ],
         ),

@@ -38,7 +38,21 @@ class _MoviePageState extends State<MoviePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Movie List'),
+        title: Row(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            Icon(Icons.local_movies_rounded, color: Colors.black),
+            SizedBox(width: 10),
+            Text('Movies', style:
+            TextStyle(color: Colors.black))
+          ],
+        ),
+        // title: Text('Movie List',
+        // style: TextStyle(color: Colors.black)),
+        backgroundColor: Color(0xfff3effd),
+        iconTheme: IconThemeData(
+          color: Colors.black, // Set your desired color here
+        ),
       ),
       body: _isLoading
           ? Center(

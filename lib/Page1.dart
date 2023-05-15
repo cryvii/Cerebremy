@@ -143,7 +143,7 @@ class Page1 extends StatelessWidget {
                             child: Padding(
                               padding: const EdgeInsets.only(left: 8.0, top: 20),
                               child: Text(
-                                'Books',
+                                'Reading',
                                 style: GoogleFonts.bitter(
                                     fontSize: 22.0,
                                     color: Colors.black
@@ -154,16 +154,16 @@ class Page1 extends StatelessWidget {
                           Positioned(
                             right: 0.0,
                             child: Image.asset(
-                              'assets/origami.jpg',
+                              'assets/reading.jpg',
                               width: 130.0,
-                              height: 95.0,
+                              height: 115.0,
                             ),
                           ),
                         ],
                       ),
                       style: ElevatedButton.styleFrom(
                         elevation: 4,
-                        primary: Color(0xffffebba),
+                        primary: Color(0xfff9ded7),
                         onSurface: Colors.grey,
                         shadowColor: Colors.grey.withOpacity(0.1),
                         shape: RoundedRectangleBorder(

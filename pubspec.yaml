@@ -31,6 +31,8 @@ dependencies:
   flutter:
     sdk: flutter
   http: ^0.13.1
+  intl: ^0.17.0
+  cached_network_image: ^3.1.0
 
     
 
@@ -69,6 +71,12 @@ flutter:
   # To add assets to your application, add an assets section, like this:
   assets:
      - assets/cooking.png
+     - assets/reading.jpg
+     - assets/secure.jpg
+     - assets/Journal.jpg
+     - assets/Anxious.jpg
+     - assets/avoidant.jpg
+     - assets/Fearful.jpg
      - assets/download.jpg
      - assets/origami.jpg
      - assets/movies.png
@@ -79,6 +87,44 @@ flutter:
      - assets/secure.png
      - assets/fearful_avoidant.png
      - assets/avoid.png
+     - exercise/arm.png
+     - exercise/bridge.png
+     - exercise/burp.png
+     - exercise/child.png
+     - exercise/climb.png
+     - exercise/crunches.png
+     - exercise/dog.png
+     - exercise/extra.png
+     - exercise/frog.png
+     - exercise/glute.png
+     - exercise/hops.png
+     - exercise/jump.png
+     - exercise/kicks.jpg
+     - exercise/knees.jpg
+     - exercise/leg.jpg
+     - exercise/lunges.jpg
+     - exercise/planks.jpg
+     - exercise/pushup.png
+     - exercise/skipping.png
+     - exercise/squat.png
+     - affirmations/image1.jpg
+     - affirmations/image2.jpg
+     - affirmations/image3.jpg
+     - affirmations/image4.jpg
+     - affirmations/image5.jpg
+     - affirmations/image6.jpg
+     - affirmations/image7.jpg
+     - affirmations/image8.jpg
+     - affirmations/image9.jpg
+     - affirmations/image10.jpg
+     - affirmations/image11.jpg
+     - affirmations/image12.jpg
+     - affirmations/image13.jpg
+     - affirmations/image14.jpg
+     - affirmations/image15.jpg
+     - affirmations/image16.jpg
+     - affirmations/image17.jpg
+     - affirmations/image18.jpg
      - assets/
 
   # An image asset can refer to one or more resolution-specific "variants", see

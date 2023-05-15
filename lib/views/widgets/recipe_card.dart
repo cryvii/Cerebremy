@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class RecipeCard extends StatelessWidget {
   final String title;
@@ -47,7 +48,8 @@ class RecipeCard extends StatelessWidget {
               padding: EdgeInsets.symmetric(horizontal: 5.0),
               child: Text(
                 title,
-                style: TextStyle(
+                style: GoogleFonts.merriweather(
+                  color: Colors.white,
                   fontSize: 19,
                 ),
                 overflow: TextOverflow.ellipsis,
@@ -76,7 +78,8 @@ class RecipeCard extends StatelessWidget {
                         size: 18,
                       ),
                       SizedBox(width: 7),
-                      Text(rating),
+                      Text(rating,
+                      style: GoogleFonts.merriweather(color: Colors.white),),
                     ],
                   ),
                 ),
@@ -95,7 +98,7 @@ class RecipeCard extends StatelessWidget {
                         size: 18,
                       ),
                       SizedBox(width: 7),
-                      Text(cookTime),
+                      Text(cookTime, style: GoogleFonts.merriweather(color: Colors.white)),
                     ],
                   ),
                 )
