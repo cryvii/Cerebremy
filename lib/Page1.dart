@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:testest/cooking.dart';
-
-//import 'views/home.dart';
+import '/origami.dart';
+import '/Exercise.dart';
+import 'views/home.dart';
 import 'views/homepage.dart';
 
 /// KEEPING IT BUSYYYYYYYYYYYY
@@ -82,7 +83,7 @@ class Page1 extends StatelessWidget {
                     height: 100,
                     child: ElevatedButton(
                       onPressed: (){
-                        Navigator.push(context,MaterialPageRoute(builder: (context)=> HomePage()));
+                        Navigator.push(context,MaterialPageRoute(builder: (context)=> MoviePage()));
                       },
                       child: Stack(
                         children: [
@@ -132,7 +133,9 @@ class Page1 extends StatelessWidget {
                     width: double.infinity,
                     height: 100,
                     child: ElevatedButton(
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.push(context,MaterialPageRoute(builder: (context)=> BookRecommendationPage()));
+                      },
                       child: Stack(
                         children: [
                           Positioned(
@@ -140,7 +143,7 @@ class Page1 extends StatelessWidget {
                             child: Padding(
                               padding: const EdgeInsets.only(left: 8.0, top: 20),
                               child: Text(
-                                'Origami',
+                                'Books',
                                 style: GoogleFonts.bitter(
                                     fontSize: 22.0,
                                     color: Colors.black
@@ -181,7 +184,9 @@ class Page1 extends StatelessWidget {
                     width: double.infinity,
                     height: 100,
                     child: ElevatedButton(
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.push(context,MaterialPageRoute(builder: (context)=> ExercisePage()));
+                      },
                       child: Stack(
                         children: [
                           Positioned(

@@ -1,3 +1,4 @@
+
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:testest/Attachment.dart';
@@ -5,10 +6,10 @@ import 'package:testest/Chatter.dart';
 import 'package:testest/MoodTracker.dart';
 import 'package:testest/PersonalSoln.dart';
 import 'package:testest/Settings.dart';
-import 'package:testest/Whole.dart';
 import 'Page1.dart';
 import 'Page2.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'News.dart';
 
 class HomePageMaterial extends StatelessWidget {
 
@@ -379,7 +380,7 @@ class HomePageMaterial extends StatelessWidget {
                             onPressed: () {
                               Navigator.push(
                                       context,
-                                    MaterialPageRoute(builder: (context) => Whole()),
+                                    MaterialPageRoute(builder: (context) => NewsPage()),
                                    );
                             },
                             child: Column(

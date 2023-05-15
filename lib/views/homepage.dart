@@ -3,12 +3,12 @@ import 'package:testest/views/widgets/recipe_card.dart';
 
 import '../models/movie.api.dart';
 import '../models/movie.dart';
-class HomePage extends StatefulWidget {
+class MoviePage extends StatefulWidget {
   @override
-  _HomePageState createState() => _HomePageState();
+  _MoviePageState createState() => _MoviePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _MoviePageState extends State<MoviePage> {
   late List<Movie> _movies = [];
   bool _isLoading = true;
 
