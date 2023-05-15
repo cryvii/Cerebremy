@@ -35,7 +35,7 @@ class _HomePageState extends State<HomePage> {
             children: [
               Icon(Icons.restaurant_menu),
               SizedBox(width: 10),
-              Text('Food Recipe')
+              Text('Food Recipes')
             ],
           ),
         ),
