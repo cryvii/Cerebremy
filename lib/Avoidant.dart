@@ -147,6 +147,7 @@
 // }
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -206,7 +207,9 @@ class _CommunicationChallengesPageState
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Communication Challenges'),
+        backgroundColor: Colors.indigo,
+        title: Text('Communication Challenges',
+        style: GoogleFonts.merriweather()),
       ),
       body: ListView.builder(
         itemCount: challenges.length,
@@ -258,7 +261,7 @@ class ChallengeTile extends StatelessWidget {
       child: ListTile(
         title: Text(
           challenge.title,
-          style: TextStyle(
+          style: GoogleFonts.merriweather(
             fontSize: 20,
             fontWeight: FontWeight.bold,
           ),
@@ -266,14 +269,15 @@ class ChallengeTile extends StatelessWidget {
         subtitle: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            SizedBox(height: 8),
             Text(
               challenge.description,
-              style: TextStyle(fontSize: 16),
+              style: GoogleFonts.raleway(fontSize: 16),
             ),
             SizedBox(height: 8),
             Text(
               'Tip: ${challenge.tip}',
-              style: TextStyle(
+              style: GoogleFonts.bitter(
                 fontStyle: FontStyle.italic,
                 fontSize: 14,
               ),
@@ -283,17 +287,17 @@ class ChallengeTile extends StatelessWidget {
         trailing: challenge.completed
             ? Icon(
                 Icons.check_circle,
-                color: Colors.green,
+                color: Colors.blue[300],
                 size: 30,
               )
             : ElevatedButton(
                 onPressed: onCompleted,
                 child: Text(
                   'I did it !',
-                  style: TextStyle(fontSize: 14),
+                  style: GoogleFonts.raleway(fontSize: 14),
                 ),
                 style: ElevatedButton.styleFrom(
-                  primary: Colors.pink,
+                  primary: Colors.blue[200],
                   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 8),
                   shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(8),

@@ -286,6 +286,7 @@ import 'package:flutter/material.dart';
 // }
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -354,7 +355,8 @@ class _MindfulnessBreathingPageState extends State<MindfulnessBreathingPage>
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Mindfulness Breathing'),
+        title: Text('Mindfulness Breathing',
+            style: GoogleFonts.merriweather()),
       ),
       body: Center(
         child: Column(
@@ -362,7 +364,7 @@ class _MindfulnessBreathingPageState extends State<MindfulnessBreathingPage>
           children: [
             Text(
               'Take a deep breath and focus on your breath.',
-              style: TextStyle(fontSize: 20),
+            style: GoogleFonts.raleway(fontSize: 20),
               textAlign: TextAlign.center,
             ),
             SizedBox(height: 32),
@@ -383,7 +385,7 @@ class _MindfulnessBreathingPageState extends State<MindfulnessBreathingPage>
                       child: Center(
                         child: Text(
                           'Breathe',
-                          style: TextStyle(
+                          style: GoogleFonts.raleway(
                             fontSize: 24,
                             fontWeight: FontWeight.bold,
                             color: Colors.white,
@@ -398,9 +400,10 @@ class _MindfulnessBreathingPageState extends State<MindfulnessBreathingPage>
             SizedBox(height: 32),
             ElevatedButton(
               onPressed: () {},
-              child: Text('Start Breathing'),
+              child: Text('Start Breathing',
+              style: GoogleFonts.raleway()),
               style: ElevatedButton.styleFrom(
-                primary: Colors.green,
+                primary: Colors.blue,
                 padding: EdgeInsets.symmetric(horizontal: 32, vertical: 16),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(24),

@@ -11,6 +11,7 @@ import 'Page1.dart';
 import 'Page2.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'News.dart';
+import 'MBTI.dart';
 
 class HomePageMaterial extends StatelessWidget {
 
@@ -325,7 +326,7 @@ class HomePageMaterial extends StatelessWidget {
                             onPressed: () {
                               Navigator.push(
                                       context,
-                                    MaterialPageRoute(builder: (context) => PersonalSoln()),
+                                    MaterialPageRoute(builder: (context) => MBTIQuizPage()),
                                    );
                             },
                             child: Column(

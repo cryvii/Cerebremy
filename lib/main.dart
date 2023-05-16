@@ -41,7 +41,7 @@ class _MyAppState extends State<MyApp> {
                           width: width,
                           //height: 240,
                           child: Center(
-                            child: Text("Cerebremy",
+                            child: Text("CEREBREMY" ,
                                 style: GoogleFonts.lobster(
                                     fontSize: 50,
                                     color: Colors.white

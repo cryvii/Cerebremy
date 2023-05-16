@@ -125,7 +125,10 @@ flutter:
      - affirmations/image16.jpg
      - affirmations/image17.jpg
      - affirmations/image18.jpg
-     - assets/
+     - assets/baby.jpg
+     - assets/cat.jpg
+     - assets/dog.jpg
+     - assets/nature.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
