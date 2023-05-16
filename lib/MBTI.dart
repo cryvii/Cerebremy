@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -43,14 +44,18 @@ class _MBTIQuizPageState extends State<MBTIQuizPage> {
           context: context,
           builder: (BuildContext context) {
             return AlertDialog(
-              title: Text('MBTI Result'),
-              content: Text('Your MBTI result is: $mbtiResult'),
+              title: Text('MBTI Result'
+              ,style: GoogleFonts.merriweather()),
+              content: Text('Your MBTI result is: $mbtiResult',style: GoogleFonts.merriweather()),
               actions: <Widget>[
                 ElevatedButton(
-                  child: Text('OK'),
+                  child: Text('OK',style: GoogleFonts.merriweather()),
                   onPressed: () {
                     Navigator.of(context).pop();
                   },
+                  style: ElevatedButton.styleFrom(
+                    primary:Colors.purple[500]
+                  ),
                 ),
               ],
             );
@@ -70,7 +75,9 @@ class _MBTIQuizPageState extends State<MBTIQuizPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('MBTI Quiz'),
+        title: Text('MBTI Quiz',
+            style: GoogleFonts.merriweather()),
+        backgroundColor: Colors.purple[500],
       ),
       body: Padding(
         padding: const EdgeInsets.all(16.0),
@@ -79,7 +86,7 @@ class _MBTIQuizPageState extends State<MBTIQuizPage> {
           children: [
             Text(
               'Question ${currentQuestionIndex + 1}/${questions.length}:',
-              style: TextStyle(
+          style: GoogleFonts.merriweather(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
               ),
@@ -87,7 +94,7 @@ class _MBTIQuizPageState extends State<MBTIQuizPage> {
             SizedBox(height: 8),
             Text(
               questions[currentQuestionIndex].text,
-              style: TextStyle(fontSize: 18),
+              style: GoogleFonts.merriweather(fontSize: 18),
             ),
             SizedBox(height: 16),
             ListView.builder(
@@ -95,7 +102,7 @@ class _MBTIQuizPageState extends State<MBTIQuizPage> {
               itemCount: questions[currentQuestionIndex].choices.length,
               itemBuilder: (context, index) {
                 return RadioListTile(
-                  title: Text(questions[currentQuestionIndex].choices[index]),
+                  title: Text(questions[currentQuestionIndex].choices[index],style: GoogleFonts.merriweather()),
                   value: index,
                   groupValue: selectedAnswers[currentQuestionIndex],
                   onChanged: (int? value) {
@@ -109,7 +116,11 @@ class _MBTIQuizPageState extends State<MBTIQuizPage> {
               onPressed: () {
                 answerQuestion(-1); // Skips the current question
               },
-              child: Text('Skip'),
+              child: Text('Skip',
+              style: GoogleFonts.merriweather()),
+              style: ElevatedButton.styleFrom(
+                primary: Colors.purple[500]
+              ),
             ),
           ],
         ),
