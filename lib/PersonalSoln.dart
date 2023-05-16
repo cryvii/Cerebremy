@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:testest/MBTI.dart';
 import 'package:testest/cooking.dart';
 
 class PersonalSoln extends StatelessWidget {
@@ -27,7 +28,7 @@ class PersonalSoln extends StatelessWidget {
                     height: 100,
                     child: ElevatedButton(
                         onPressed: (){
-                          Navigator.push(context,MaterialPageRoute(builder: (context)=> CookingPage()));
+                          Navigator.push(context,MaterialPageRoute(builder: (context)=> MBTIQuizPage()));
                         },
                       child: Stack(
                         children: [
@@ -36,7 +37,7 @@ class PersonalSoln extends StatelessWidget {
                             child: Padding(
                               padding: const EdgeInsets.only(left: 8.0, top: 20),
                               child: Text(
-                                'Cooking',
+                                'MBTI quiz',
                                 style: GoogleFonts.bitter(
                                     fontSize: 22.0,
                                     color: Colors.black
