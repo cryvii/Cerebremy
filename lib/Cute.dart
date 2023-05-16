@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:testest/CUte/Baby.dart';
 import 'package:testest/CUte/Cats.dart';
+import 'package:testest/CUte/Nature.dart';
 import 'package:testest/CUte/Puppies.dart';
 import 'package:testest/cooking.dart';
 import '/origami.dart';
@@ -35,7 +36,7 @@ class Cute extends StatelessWidget {
                     height: 100,
                     child: ElevatedButton(
                         onPressed: (){
-                          Navigator.push(context,MaterialPageRoute(builder: (context)=> HomePage()));
+                          Navigator.push(context,MaterialPageRoute(builder: (context)=> CuteNaturePicturesPage()));
                         },
                       child: Stack(
                         children: [
