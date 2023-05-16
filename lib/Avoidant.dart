@@ -179,13 +179,28 @@ class _CommunicationChallengesPageState
       tip: 'Be sincere and genuine in your compliment.',
     ),
     // Add more challenges here
-    // ...
+    Challenge(
+      title: 'Self-reflection',
+      description:
+          'Write in a journal or engage in therapy to explore your past experiences and understand how they have shaped your attachment style.',
+      tip: '',),
+    Challenge(
+      title: 'Gradual Exposure',
+      description:
+          'Gradually expose yourself to situations that trigger avoidant tendencies. Start with less challenging scenarios and gradually increase the difficulty.  Start with less challenging scenarios and gradually increase the difficulty.',
+      tip: 'It will be uncomfortable at first. Give yourself time to adjust.',),
+    Challenge(
+      title: 'Vulnerability Challenge',
+      description:
+          'Share your thoughts and feelings about a specific topic with a trusted friend or partner. Gradually increase the depth of emotional disclosure as you build trust.',
+      tip: 'Practice active listening and reciprocity in conversations to encourage a safe space for vulnerability.',),
     Challenge(
       title: 'Organize a group activity',
       description:
           'Plan and organize a group activity with your friends or colleagues. It could be a game night, a picnic, or a team-building event.',
       tip: 'Consider everyone\'s interests and preferences when choosing the activity.',
     ),
+    
   ];
 
   @override

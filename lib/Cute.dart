@@ -1,15 +1,23 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:testest/CUte/Baby.dart';
+import 'package:testest/CUte/Cats.dart';
+import 'package:testest/CUte/Nature.dart';
+import 'package:testest/CUte/Puppies.dart';
 import 'package:testest/cooking.dart';
+import '/origami.dart';
+import '/Exercise.dart';
+import 'views/home.dart';
+import 'views/homepage.dart';
 
 /// KEEPING IT BUSYYYYYYYYYYYY
-class MoodTracker extends StatelessWidget {
+class Cute extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
         title: Text('Keeping it busy'),
-        backgroundColor: Color.fromARGB(255, 234, 111, 23),
+        backgroundColor: Color(0xff388d86),
       ),
       body: Align(
         alignment: Alignment.topLeft,
@@ -28,7 +36,7 @@ class MoodTracker extends StatelessWidget {
                     height: 100,
                     child: ElevatedButton(
                         onPressed: (){
-                          Navigator.push(context,MaterialPageRoute(builder: (context)=> CookingPage()));
+                          Navigator.push(context,MaterialPageRoute(builder: (context)=> CuteNaturePicturesPage()));
                         },
                       child: Stack(
                         children: [
@@ -37,7 +45,7 @@ class MoodTracker extends StatelessWidget {
                             child: Padding(
                               padding: const EdgeInsets.only(left: 8.0, top: 20),
                               child: Text(
-                                'Cooking',
+                                'Nature',
                                 style: GoogleFonts.bitter(
                                     fontSize: 22.0,
                                     color: Colors.black
@@ -78,7 +86,9 @@ class MoodTracker extends StatelessWidget {
                     width: double.infinity,
                     height: 100,
                     child: ElevatedButton(
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.push(context,MaterialPageRoute(builder: (context)=> CuteBabyPicturesPage()));
+                      },
                       child: Stack(
                         children: [
                           Positioned(
@@ -86,7 +96,7 @@ class MoodTracker extends StatelessWidget {
                             child: Padding(
                               padding: const EdgeInsets.only(left: 8.0, top: 20),
                               child: Text(
-                                'Movies',
+                                'Babies',
                                 style: GoogleFonts.bitter(
                                     fontSize: 22.0,
                                     color: Colors.black
@@ -127,7 +137,9 @@ class MoodTracker extends StatelessWidget {
                     width: double.infinity,
                     height: 100,
                     child: ElevatedButton(
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.push(context,MaterialPageRoute(builder: (context)=> CuteCatPicturesPage()));
+                      },
                       child: Stack(
                         children: [
                           Positioned(
@@ -135,7 +147,7 @@ class MoodTracker extends StatelessWidget {
                             child: Padding(
                               padding: const EdgeInsets.only(left: 8.0, top: 20),
                               child: Text(
-                                'Origami',
+                                'Cats',
                                 style: GoogleFonts.bitter(
                                     fontSize: 22.0,
                                     color: Colors.black
@@ -146,16 +158,16 @@ class MoodTracker extends StatelessWidget {
                           Positioned(
                             right: 0.0,
                             child: Image.asset(
-                              'assets/origami.jpg',
+                              'assets/reading.jpg',
                               width: 130.0,
-                              height: 95.0,
+                              height: 115.0,
                             ),
                           ),
                         ],
                       ),
                       style: ElevatedButton.styleFrom(
                         elevation: 4,
-                        primary: Color(0xffffebba),
+                        primary: Color(0xfff9ded7),
                         onSurface: Colors.grey,
                         shadowColor: Colors.grey.withOpacity(0.1),
                         shape: RoundedRectangleBorder(
@@ -176,7 +188,9 @@ class MoodTracker extends StatelessWidget {
                     width: double.infinity,
                     height: 100,
                     child: ElevatedButton(
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.push(context,MaterialPageRoute(builder: (context)=> CutePuppiesPage()));
+                      },
                       child: Stack(
                         children: [
                           Positioned(
@@ -184,7 +198,7 @@ class MoodTracker extends StatelessWidget {
                             child: Padding(
                               padding: const EdgeInsets.only(left: 8.0, top: 20),
                               child: Text(
-                                'Exercise',
+                                'Puppies',
                                 style: GoogleFonts.bitter(
                                   fontSize: 22.0,
                                   color: Colors.black
