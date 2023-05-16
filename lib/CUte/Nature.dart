@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:http/http.dart' as http;
 
 void main() {
@@ -46,7 +47,8 @@ class _CuteNaturePicturesPageState extends State<CuteNaturePicturesPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Cute Cat Pictures'),
+        title: Text('Nature', style: GoogleFonts.merriweather(),),
+        backgroundColor: Colors.green[200],
       ),
       body: _isLoading
           ? Center(

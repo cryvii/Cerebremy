@@ -16,8 +16,9 @@ class Cute extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Keeping it busy'),
-        backgroundColor: Color(0xff388d86),
+        title: Text('Cuteness Overload',
+            style: GoogleFonts.merriweather()),
+        backgroundColor: Color(0xffffc2d1),
       ),
       body: Align(
         alignment: Alignment.topLeft,
@@ -33,7 +34,7 @@ class Cute extends StatelessWidget {
                   padding: EdgeInsets.only(left: 10, right: 10),
                   child: SizedBox(
                     width: double.infinity,
-                    height: 100,
+                    height: 120,
                     child: ElevatedButton(
                         onPressed: (){
                           Navigator.push(context,MaterialPageRoute(builder: (context)=> CuteNaturePicturesPage()));
@@ -56,16 +57,16 @@ class Cute extends StatelessWidget {
                           Positioned(
                             right: 0.0,
                             child: Image.asset(
-                              'assets/cooking.png',
-                              width: 135.0,
-                              height: 100.0,
+                              'assets/nature.jpg',
+                              width: 140.0,
+                              height: 140.0,
                             ),
                           ),
                         ],
                       ),
                         style: ElevatedButton.styleFrom(
                           elevation: 4,
-                          primary: Color(0xfff6e4d6),
+                          primary: Colors.white,
                           onSurface: Colors.grey,
                           shadowColor: Colors.grey.withOpacity(0.1),
                           shape: RoundedRectangleBorder(
@@ -84,7 +85,7 @@ class Cute extends StatelessWidget {
                   padding: EdgeInsets.only(left: 10, right: 10),
                   child: SizedBox(
                     width: double.infinity,
-                    height: 100,
+                    height: 120,
                     child: ElevatedButton(
                       onPressed: (){
                         Navigator.push(context,MaterialPageRoute(builder: (context)=> CuteBabyPicturesPage()));
@@ -107,16 +108,16 @@ class Cute extends StatelessWidget {
                           Positioned(
                             right: 0.0,
                             child: Image.asset(
-                              'assets/movies.png',
-                              width: 120.0,
-                              height: 110.0,
+                              'assets/baby.jpg',
+                              width: 140.0,
+                              height: 125.0,
                             ),
                           ),
                         ],
                       ),
                       style: ElevatedButton.styleFrom(
                         elevation: 4,
-                        primary: Color(0xfff3effd),
+                        primary: Colors.white,
                         onSurface: Colors.grey,
                         shadowColor: Colors.grey.withOpacity(0.1),
                         shape: RoundedRectangleBorder(
@@ -135,7 +136,7 @@ class Cute extends StatelessWidget {
                   padding: EdgeInsets.only(left: 10, right: 10),
                   child: SizedBox(
                     width: double.infinity,
-                    height: 100,
+                    height: 120,
                     child: ElevatedButton(
                       onPressed: (){
                         Navigator.push(context,MaterialPageRoute(builder: (context)=> CuteCatPicturesPage()));
@@ -158,16 +159,16 @@ class Cute extends StatelessWidget {
                           Positioned(
                             right: 0.0,
                             child: Image.asset(
-                              'assets/reading.jpg',
-                              width: 130.0,
-                              height: 115.0,
+                              'assets/cat.jpg',
+                              width: 140.0,
+                              height: 125.0,
                             ),
                           ),
                         ],
                       ),
                       style: ElevatedButton.styleFrom(
                         elevation: 4,
-                        primary: Color(0xfff9ded7),
+                        primary: Colors.white,
                         onSurface: Colors.grey,
                         shadowColor: Colors.grey.withOpacity(0.1),
                         shape: RoundedRectangleBorder(
@@ -186,7 +187,7 @@ class Cute extends StatelessWidget {
                   padding: EdgeInsets.only(left: 10, right: 10),
                   child: SizedBox(
                     width: double.infinity,
-                    height: 100,
+                    height: 120,
                     child: ElevatedButton(
                       onPressed: (){
                         Navigator.push(context,MaterialPageRoute(builder: (context)=> CutePuppiesPage()));
@@ -209,16 +210,16 @@ class Cute extends StatelessWidget {
                           Positioned(
                             right: 0.0,
                             child: Image.asset(
-                              'assets/download.jpg',
-                              width: 135.0,
-                              height: 110.0,
+                              'assets/dog.jpg',
+                              width: 140.0,
+                              height: 130.0,
                             ),
                           ),
                         ],
                       ),
                       style: ElevatedButton.styleFrom(
                         elevation: 4,
-                        primary: Colors.blue[50],
+                        primary: Colors.white,
                         onSurface: Colors.grey,
                         shadowColor: Colors.grey.withOpacity(0.1),
                         shape: RoundedRectangleBorder(
