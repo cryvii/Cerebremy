@@ -502,7 +502,7 @@ class _MyHomePageState extends State<MyHomePage> {
   static List<Widget> _widgetOptions = <Widget>[
     HomePageMaterial(),
     Cute(),
-    Page2(),
+    MentalHealthProfilePage(),
     Settings(),
   ];
   @override
