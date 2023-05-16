@@ -22,6 +22,121 @@ class _MBTIQuizPageState extends State<MBTIQuizPage> {
       text: 'I prefer to spend my free time alone.',
       choices: ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'],
     ),
+    Question(
+      text: 'I prefer to have a detailed plan rather than being spontaneous.',
+      choices: ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'],
+),
+
+Question(
+      text: 'I enjoy exploring abstract concepts and theories.',
+      choices: ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'],
+),
+
+Question(
+      text: 'I am comfortable with taking risks and trying new experiences.',
+      choices: ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'],
+),
+
+Question(
+      text: 'I tend to trust my instincts and intuition when making decisions.',
+      choices: ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'],
+),
+
+Question(
+      text: 'I value harmony and prefer to avoid conflicts or confrontations.',
+      choices: ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'],
+),
+
+
+
+Question(
+      text: 'I enjoy analyzing data and facts before making judgments.',
+      choices: ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'],
+),
+
+
+Question(
+      text: 'I find it energizing to attend social events and meet new people.',
+      choices: ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'],
+),
+
+
+Question(
+      text: 'I tend to focus on the big picture rather than getting caught up in details.',
+      choices: ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'],
+),
+
+
+Question(
+      text: 'I prefer a structured and organized approach to work or projects.',
+      choices: ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'],
+),
+
+
+Question(
+      text: 'I enjoy engaging in deep, philosophical conversations.',
+      choices: ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'],
+),
+
+
+
+Question(
+      text: 'I feel energized after spending time alone to recharge.',
+      choices: ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'],
+),
+
+
+Question(
+      text: 'I enjoy helping others and being of service to those in need.',
+      choices: ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'],
+),
+
+
+Question(
+      text: 'I prefer a flexible and adaptable approach to life rather than rigid routines.',
+      choices: ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'],
+),
+
+
+Question(
+      text: 'I am open to considering multiple perspectives and opinions.',
+      choices: ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'],
+),
+
+
+Question(
+      text: 'I find it easy to express my emotions to others.',
+      choices: ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'],
+),
+
+
+Question(
+      text: 'I enjoy brainstorming and generating new ideas with a team.',
+      choices: ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'],
+),
+
+
+Question(
+      text: 'I am motivated by achieving tangible results and goals.',
+      choices: ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'],
+),
+
+
+Question(
+      text: 'I prefer to have a few close friends rather than a large circle of acquaintances.',
+      choices: ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'],
+),
+
+
+Question(
+      text: 'I enjoy learning and exploring a wide range of subjects and interests.',
+      choices: ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'],
+),
+
+Question(
+      text: 'I prefer to follow established rules and guidelines rather than improvising.',
+      choices: ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'],
+),
     // Add more questions here
     // ...
   ];

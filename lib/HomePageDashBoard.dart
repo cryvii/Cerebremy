@@ -3,7 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:testest/Attachment.dart';
 import 'package:testest/Chatter.dart';
-import 'package:testest/MoodTracker.dart';
+import 'package:testest/Cute.dart';
+import 'package:testest/Mindfull.dart';
 import 'package:testest/PersonalSoln.dart';
 import 'package:testest/Settings.dart';
 import 'Page1.dart';
@@ -207,7 +208,7 @@ class HomePageMaterial extends StatelessWidget {
 
                                   Navigator.push(
                                       context,
-                                    MaterialPageRoute(builder: (context) => MoodTracker()),
+                                    MaterialPageRoute(builder: (context) => MindfulnessBreathingPage()),
                                    );
                                 },
 
@@ -217,7 +218,7 @@ class HomePageMaterial extends StatelessWidget {
                                   children: [
                                     Icon(Icons.mood, size: 80,),
                                     SizedBox(height: 10.0),
-                                    Text('Personal Mood Tracker',
+                                    Text('Mindfulness Breathing',
                                         textAlign: TextAlign.center,
                                         style: GoogleFonts.bitter(fontSize: 20.0),
                                     ),
@@ -500,7 +501,7 @@ class _MyHomePageState extends State<MyHomePage> {
   PageController _pageController = PageController(initialPage: 0);
   static List<Widget> _widgetOptions = <Widget>[
     HomePageMaterial(),
-    Page1(),
+    Cute(),
     Page2(),
     Settings(),
   ];
