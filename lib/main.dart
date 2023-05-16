@@ -1,14 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_sign_in/google_sign_in.dart';
@@ -52,7 +41,7 @@ class _MyAppState extends State<MyApp> {
                           width: width,
                           //height: 240,
                           child: Center(
-                            child: Text("C e r e b r e m y",
+                            child: Text("Cerebremy",
                                 style: GoogleFonts.lobster(
                                     fontSize: 50,
                                     color: Colors.white
@@ -180,16 +169,31 @@ class _MyAppState extends State<MyApp> {
                               onPressed: () {
                               },
                             ),
-                            //     SignInButton.mini(
-                            //       // buttonType
-                            //       buttonType: ButtonType.google,
-                            //       buttonSize: ButtonSize.large,
-                            //       btnColor: Colors.transparent,
-                            //       elevation: 0.0,
-                            //       onPressed: () {
-                            //         Navigator.push(context,MaterialPageRoute(builder: (context)=> SignInScreen()));
-                            //       },
-                            //     ),
+                            FutureBuilder(
+                          future: Authentication.initializeFirebase(context: context),
+                          builder: (context, snapshot) {
+                            if (snapshot.hasError) {
+                              return Text('Error initializing Firebase');
+                            } else if (snapshot.connectionState == ConnectionState.done) {
+                              return GoogleSignInButton();
+                            }
+                            return CircularProgressIndicator(
+                              valueColor: AlwaysStoppedAnimation<Color>(
+                                Colors.orange,
+                              ),
+                            );
+                          },
+                        ),
+                                // SignInButton.mini(
+                                //   // buttonType
+                                //   buttonType: ButtonType.google,
+                                //   buttonSize: ButtonSize.large,
+                                //   btnColor: Colors.transparent,
+                                //   elevation: 0.0,
+                                //   onPressed: () {
+                                //     Navigator.push(context,MaterialPageRoute(builder: (context)=> SignInScreen()));
+                                //   },
+                                // ),
                             SignInButton.mini(
                               buttonType: ButtonType.facebook,
                               buttonSize: ButtonSize.large,
@@ -230,21 +234,21 @@ class _MyAppState extends State<MyApp> {
                               color: Colors.white,
                               fontSize: 16.0
                           ),),
-                        FutureBuilder(
-                          future: Authentication.initializeFirebase(context: context),
-                          builder: (context, snapshot) {
-                            if (snapshot.hasError) {
-                              return Text('Error initializing Firebase');
-                            } else if (snapshot.connectionState == ConnectionState.done) {
-                              return GoogleSignInButton();
-                            }
-                            return CircularProgressIndicator(
-                              valueColor: AlwaysStoppedAnimation<Color>(
-                                Colors.orange,
-                              ),
-                            );
-                          },
-                        ),
+                        // FutureBuilder(
+                        //   future: Authentication.initializeFirebase(context: context),
+                        //   builder: (context, snapshot) {
+                        //     if (snapshot.hasError) {
+                        //       return Text('Error initializing Firebase');
+                        //     } else if (snapshot.connectionState == ConnectionState.done) {
+                        //       return GoogleSignInButton();
+                        //     }
+                        //     return CircularProgressIndicator(
+                        //       valueColor: AlwaysStoppedAnimation<Color>(
+                        //         Colors.orange,
+                        //       ),
+                        //     );
+                        //   },
+                        // ),
                       ],
                     )
                 )

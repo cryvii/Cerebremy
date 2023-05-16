@@ -1,5 +1,6 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:testest/Exercise.dart';
 import 'package:testest/screens/sign_in_screen.dart';
 
 import '../HomePageDashBoard.dart';
@@ -49,7 +50,7 @@ class _UserInfoScreenState extends State<UserInfoScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Color(0xFF388d86),
       appBar: AppBar(
         elevation: 0,
         backgroundColor: Colors.black,
@@ -108,17 +109,17 @@ class _UserInfoScreenState extends State<UserInfoScreen> {
               Text(
                 '( ${_user.email!} )',
                 style: TextStyle(
-                  color: Colors.orange,
+                  color: Colors.white,
                   fontSize: 20,
                   letterSpacing: 0.5,
                 ),
               ),
               SizedBox(height: 24.0),
               Text(
-                'Oh hey ! I\'m so happy you\'re here. Click the button to start exploring your personal mental health application :) ',
+                '                   Oh Hey !\n \n    I\'m so happy you\'re here. \n\n',
                 style: TextStyle(
-                    color: Colors.grey,
-                    fontSize: 14,
+                    color: Colors.white,
+                    fontSize: 25,
                     letterSpacing: 0.2),
               ),
               SizedBox(height: 8.0),
@@ -163,8 +164,10 @@ class _UserInfoScreenState extends State<UserInfoScreen> {
                         setState(() {
                           _isSigningOut = false;
                         });
-                        Navigator.of(context)
-                            .pushReplacement(_routeToSignInScreen());
+                        Navigator.push(
+                                      context,
+                                    MaterialPageRoute(builder: (context) => MyApp()),
+                                   );
                       },
                       child: Padding(
                         padding: EdgeInsets.only(top: 8.0, bottom: 8.0),

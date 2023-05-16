@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:testest/Affirmations.dart';
+import 'package:testest/Avoidant.dart';
+import 'package:testest/Fearful.dart';
 import 'package:testest/cooking.dart';
 import 'Jounaling.dart';
 
@@ -135,7 +137,9 @@ class Attachment extends StatelessWidget {
                     width: double.infinity,
                     height: 150,
                     child: ElevatedButton(
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.push(context,MaterialPageRoute(builder: (context)=> FearfulAvoidantRemediesPage()));
+                      },
                       child: Stack(
                         children: [
                           Positioned(
@@ -185,7 +189,9 @@ class Attachment extends StatelessWidget {
                     width: double.infinity,
                     height: 150,
                     child: ElevatedButton(
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.push(context,MaterialPageRoute(builder: (context)=> CommunicationChallengesPage()));
+                      },
                       child: Stack(
                         children: [
                           Positioned(
