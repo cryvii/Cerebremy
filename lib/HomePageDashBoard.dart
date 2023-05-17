@@ -4,6 +4,7 @@ import 'package:flutter/rendering.dart';
 import 'package:testest/Attachment.dart';
 import 'package:testest/Chatter.dart';
 import 'package:testest/Cute.dart';
+import 'package:testest/GPT.dart';
 import 'package:testest/Mindfull.dart';
 import 'package:testest/PersonalSoln.dart';
 import 'package:testest/Settings.dart';
@@ -326,7 +327,7 @@ class HomePageMaterial extends StatelessWidget {
                             onPressed: () {
                               Navigator.push(
                                       context,
-                                    MaterialPageRoute(builder: (context) => MBTIQuizPage()),
+                                    MaterialPageRoute(builder: (context) => PersonalSoln()),
                                    );
                             },
                             child: Column(

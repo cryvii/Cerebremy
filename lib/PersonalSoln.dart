@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:testest/Attachment.dart';
+import 'package:testest/AttachmentQuiz.dart';
 import 'package:testest/MBTI.dart';
+import 'package:testest/MBTI2.dart';
 import 'package:testest/cooking.dart';
+import 'package:testest/mood.dart';
+import 'package:testest/mood_track.dart';
 
 class PersonalSoln extends StatelessWidget {
   @override
@@ -28,7 +33,7 @@ class PersonalSoln extends StatelessWidget {
                     height: 100,
                     child: ElevatedButton(
                         onPressed: (){
-                          Navigator.push(context,MaterialPageRoute(builder: (context)=> MBTIQuizPage()));
+                          Navigator.push(context,MaterialPageRoute(builder: (context)=> WebPage()));
                         },
                       child: Stack(
                         children: [
@@ -78,7 +83,9 @@ class PersonalSoln extends StatelessWidget {
                     width: double.infinity,
                     height: 100,
                     child: ElevatedButton(
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.push(context,MaterialPageRoute(builder: (context)=> MoodTrackerApp()));
+                      },
                       child: Stack(
                         children: [
                           Positioned(
@@ -86,7 +93,7 @@ class PersonalSoln extends StatelessWidget {
                             child: Padding(
                               padding: const EdgeInsets.only(left: 8.0, top: 20),
                               child: Text(
-                                'Movies',
+                                'Mood Tracker',
                                 style: GoogleFonts.bitter(
                                     fontSize: 22.0,
                                     color: Colors.black
@@ -127,7 +134,9 @@ class PersonalSoln extends StatelessWidget {
                     width: double.infinity,
                     height: 100,
                     child: ElevatedButton(
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.push(context,MaterialPageRoute(builder: (context)=> MoodQuestionnaire()));
+                      },
                       child: Stack(
                         children: [
                           Positioned(
@@ -135,7 +144,7 @@ class PersonalSoln extends StatelessWidget {
                             child: Padding(
                               padding: const EdgeInsets.only(left: 8.0, top: 20),
                               child: Text(
-                                'Origami',
+                                'Questionnaire',
                                 style: GoogleFonts.bitter(
                                     fontSize: 22.0,
                                     color: Colors.black
@@ -176,7 +185,9 @@ class PersonalSoln extends StatelessWidget {
                     width: double.infinity,
                     height: 100,
                     child: ElevatedButton(
-                      onPressed: (){},
+                      onPressed: (){
+                        Navigator.push(context,MaterialPageRoute(builder: (context)=> WebPages()));
+                      },
                       child: Stack(
                         children: [
                           Positioned(
@@ -184,7 +195,7 @@ class PersonalSoln extends StatelessWidget {
                             child: Padding(
                               padding: const EdgeInsets.only(left: 8.0, top: 20),
                               child: Text(
-                                'Exercise',
+                                'Attachment Quiz',
                                 style: GoogleFonts.bitter(
                                   fontSize: 22.0,
                                   color: Colors.black

@@ -142,7 +142,7 @@ Question(
     // ...
   ];
 
-  List<int> selectedAnswers = List<int>.filled(10, -1);
+  List<int> selectedAnswers = List<int>.filled(100, -1);
 
   int currentQuestionIndex = 0;
 
