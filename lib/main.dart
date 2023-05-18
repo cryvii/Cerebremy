@@ -169,31 +169,32 @@ class _MyAppState extends State<MyApp> {
                               onPressed: () {
                               },
                             ),
-                            FutureBuilder(
-                          future: Authentication.initializeFirebase(context: context),
-                          builder: (context, snapshot) {
-                            if (snapshot.hasError) {
-                              return Text('Error initializing Firebase');
-                            } else if (snapshot.connectionState == ConnectionState.done) {
-                              return GoogleSignInButton();
-                            }
-                            return CircularProgressIndicator(
-                              valueColor: AlwaysStoppedAnimation<Color>(
-                                Colors.orange,
-                              ),
-                            );
-                          },
-                        ),
-                                // SignInButton.mini(
-                                //   // buttonType
-                                //   buttonType: ButtonType.google,
-                                //   buttonSize: ButtonSize.large,
-                                //   btnColor: Colors.transparent,
-                                //   elevation: 0.0,
-                                //   onPressed: () {
-                                //     Navigator.push(context,MaterialPageRoute(builder: (context)=> SignInScreen()));
-                                //   },
-                                // ),
+                          //   FutureBuilder(
+                          // future: Authentication.initializeFirebase(context: context),
+                          // builder: (context, snapshot) {
+                          //   if (snapshot.hasError) {
+                          //     return Text('Error initializing Firebase');
+                          //   } else
+                          //     if (snapshot.connectionState == ConnectionState.done) {
+                          //     return GoogleSignInButton();
+                          //   }
+                          //   return CircularProgressIndicator(
+                          //     valueColor: AlwaysStoppedAnimation<Color>(
+                          //       Colors.orange,
+                          //     ),
+                          //   );
+                          // },
+                        //),
+                                SignInButton.mini(
+                                  // buttonType
+                                  buttonType: ButtonType.google,
+                                  buttonSize: ButtonSize.large,
+                                  btnColor: Colors.transparent,
+                                  elevation: 0.0,
+                                  onPressed: () {
+                                    Navigator.push(context,MaterialPageRoute(builder: (context)=> SignInScreen()));
+                                  },
+                                ),
                             SignInButton.mini(
                               buttonType: ButtonType.facebook,
                               buttonSize: ButtonSize.large,

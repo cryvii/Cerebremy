@@ -84,6 +84,7 @@
 // }
 
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MaterialApp(
@@ -101,7 +102,8 @@ class MentalHealthProfilePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Mental Health Profile'),
+        title: Text('Mental Health Profile', style: GoogleFonts.merriweather()),
+        backgroundColor: Colors.red,
       ),
       body: SingleChildScrollView(
         padding: EdgeInsets.all(16.0),
@@ -115,7 +117,7 @@ class MentalHealthProfilePage extends StatelessWidget {
             SizedBox(height: 16.0),
             Text(
               'Anonymous User',
-              style: TextStyle(
+              style: GoogleFonts.merriweather(
                 fontSize: 24.0,
                 fontWeight: FontWeight.bold,
               ),
@@ -123,7 +125,7 @@ class MentalHealthProfilePage extends StatelessWidget {
             SizedBox(height: 8.0),
             Text(
               'Characteristics: Listener, Support Seeker',
-              style: TextStyle(
+              style: GoogleFonts.merriweather(
                 fontSize: 16.0,
                 color: Colors.grey,
               ),
@@ -138,7 +140,7 @@ class MentalHealthProfilePage extends StatelessWidget {
                   children: [
                     Text(
                       'About Me',
-                      style: TextStyle(
+                      style: GoogleFonts.merriweather(
                         fontSize: 20.0,
                         fontWeight: FontWeight.bold,
                       ),
@@ -147,7 +149,7 @@ class MentalHealthProfilePage extends StatelessWidget {
                     Text(
                       'I am an anonymous user seeking support and understanding. '
                       'I am here to listen and provide support to others as well.',
-                      style: TextStyle(fontSize: 16.0),
+                      style: GoogleFonts.merriweather(fontSize: 16.0),
                     ),
                   ],
                 ),
@@ -156,7 +158,8 @@ class MentalHealthProfilePage extends StatelessWidget {
             SizedBox(height: 16.0),
             ElevatedButton(
               onPressed: () {},
-              child: Text('Edit Profile'),
+              child: Text('Edit Profile', style: GoogleFonts.merriweather()),
+              style: ElevatedButton.styleFrom(primary: Colors.red),
             ),
           ],
         ),
